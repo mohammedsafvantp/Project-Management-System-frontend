@@ -5,7 +5,7 @@ import { Route, Routes } from 'react-router-dom'
 import Landing from './pages/Landing'
 import Project from './pages/Project'
 import Auth from './pages/Auth'
-import Pnf from './components/pnf'
+
 
 
 
@@ -19,7 +19,6 @@ function App() {
         <Route path={'/login'} element={<Auth/>} />
         <Route path={'/register'} element={<Auth insideRegister={true} />} />
         <Route path={'/project'} element={<Project/>}/>
-        <Route path={'/*'} element={<Pnf/>} />
 
       </Routes>
 
